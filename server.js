@@ -5,6 +5,6 @@ http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
 
   fs.readdir('D:\\home\\site\\repository', function(err, files) {
-      res.end('List files: ' + files + "; " + err);
+      res.end('vavava List files: ' + files + "; " + err);
   })
 }).listen(port);
