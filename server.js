@@ -1,0 +1,10 @@
+var fs = require('fs')
+var http = require('http')
+var port = process.env.PORT || 1337;
+http.createServer(function(req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+
+  fs.readdir('D:\\home\\site\\repository', function(err, files) {
+      res.end('List files: ' + files + "; " + err);
+  })
+}).listen(port);
