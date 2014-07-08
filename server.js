@@ -4,7 +4,7 @@ var port = process.env.PORT || 1337;
 http.createServer(function(req, res) {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
 
-  fs.readdir('D:\\home\\site\\repository', function(err, files) {
-      res.end('vavava List files: ' + files + "; " + err);
+  fs.readFile('D:\\home\\site\\repository\\.git\\config', function(err, file) {
+      res.end('vavava Read file: ' + file.toString() + "; " + err);
   })
 }).listen(port);
