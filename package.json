@@ -1,0 +1,23 @@
+{
+  "name": "nodeexample",
+  "version": "0.0.0",
+  "description": "nodeexample ===========",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/giltayar/nodeexample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giltayar/nodeexample/issues"
+  },
+  "homepage": "https://github.com/giltayar/nodeexample",
+  "dependencies": {
+    "lockfile": "^0.4.2"
+  }
+}
